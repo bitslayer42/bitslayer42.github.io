@@ -19,6 +19,7 @@
         <input type="radio" name="db">Urban Dictionary
         <input type="radio" name="db">Dictionary
         <input type="radio" name="db">Acronym Finder
+        <input type="radio" name="db">Green’s Dictionary of Slang
       </form>
     </nav>
   </article>
@@ -309,12 +310,8 @@
         <li><a href="https://lgfcu.org/">LGFCU</a></li>
         <li><a href="https://wellsfargo.com/">Wells Fargo</a></li>
         <li><a href="https://fidelity.com/">Fidelity</a></li>
-        <li><a href="https://login.morganstanleyclientserv.com/">Morgan Stanley</a></li>
         <li><a href="https://participant.empower-retirement.com/participant/#/login?accu=NorthCarolina">Empower</a></li>
-        <li><a href="https://my.cigna.com/">Cigna</a></li>
-        <li><a href="https://www.express-scripts.com/">express-scripts</a></li>
         <li><a href="https://myncretirement.com/">myncretirement(orbit)</a></li>
-        <li><a href="https://www.nclifetimeincome.org/">nclifetimeincome</a></li>
         <br>
         <li><a href="https://www.duke-energy.com/">Duke Energy</a></li>
         <li><a href="https://www.dominionenergync.com/">Dominion Energy</a></li>
@@ -343,7 +340,6 @@
       <ul>
         <li><a href="https://www.travelocity.com/">Travelocity</a></li>
         <li><a href="https://www.kayak.com/">Kayak</a></li>
-        <li><a href="https://www.expedia.com/">Expedia</a></li>
         <li><a href="https://www.flyavl.com/">flyavl</a></li>
         <li><a href="https://www.allegiantair.com/">allegiantair</a></li>
         <li><a href="https://www.southwest.com/">southwest</a></li>
@@ -674,6 +670,9 @@
       }
       else if (document.genform.db[3].checked == 1) {
         location.href = ("https://www.acronymfinder.com/af-query.asp?string=exact&Acronym=" + encodeURI(e));
+      }
+      else if (document.genform.db[4].checked == 1) {
+        location.href = ("https://greensdictofslang.com/search/basic?q=" + encodeURI(e));
       }
       return false;
     }
